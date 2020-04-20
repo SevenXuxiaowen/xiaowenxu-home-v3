@@ -24,7 +24,8 @@ class Main extends React.Component {
                     <div className="m-box green"><span className="m-text">Work</span>  02</div>
                     <div className="m-box green"><span className="m-text">Contact</span>  03</div>
                     <br />
-                    <div className="m-box btn-cv">Resume</div>
+                    <a className="m-box btn-cv" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1-xbo3qFcWQrIx-y7bFXtsXyXx_fsaviv/view?usp=sharing">Resume</a>
+                    
                 </div>
 
                 <div className="page-about">
