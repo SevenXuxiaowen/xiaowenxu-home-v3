@@ -31,7 +31,6 @@ a:hover{
 .page-ct {
   display: flex;
   align-items: center;
-  height: 800px;
 }
 
 .p-contact{
@@ -50,9 +49,16 @@ a:hover{
 
 .m-box{
   font-size: 18px;
-  margin: 1em;
   cursor: pointer;
   /* text-align: center; */
+  margin-top: 1em;
+  padding: 0;
+  display: inline-block;
+}
+
+.m-box:hover{
+  text-decoration: none;
+  color: rgb(0, 255, 0);
 }
 
 .m-text{
@@ -61,6 +67,7 @@ a:hover{
 
 .m-text:hover{
   color: rgb(0, 255, 0);
+  text-decoration: none;
 }
 
 /* pages --------------------------------- */

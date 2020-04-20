@@ -1,7 +1,10 @@
 import React from 'react';
 import Work from './Work';
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 import { DATA } from '../APIs/blogs';
+
+
 
 class Main extends React.Component {
 
@@ -20,15 +23,15 @@ class Main extends React.Component {
             <div className="main">
 
                 <div className="side-menu">
-                    <div className="m-box green"><span className="m-text">About</span>  01</div>
-                    <div className="m-box green"><span className="m-text">Work</span>  02</div>
-                    <div className="m-box green"><span className="m-text">Contact</span>  03</div>
+                    <a className="m-box green" href='#section1'><span className="m-text">About</span>  01</a><br/>
+                    <a className="m-box green" href='#section2'><span className="m-text">Work</span>  02</a><br/>
+                    <a className="m-box green" href='#section3'><span className="m-text">Contact</span>  03</a><br/>
                     <br />
                     <a className="m-box btn-cv" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1-xbo3qFcWQrIx-y7bFXtsXyXx_fsaviv/view?usp=sharing">Resume</a>
-                    
                 </div>
 
-                <div className="page-about">
+                <ScrollableAnchor id='section1'>
+                <div className="page-about" style={{height:window.innerHeight}}>
                     <div style={{padding:"0 10px 0 0"}}>
                         <img src="img/ar.gif" className="img-fluid" alt="ar" />
                     </div>
@@ -51,14 +54,18 @@ class Main extends React.Component {
                         </div>
                     </div>
                 </div>
+                </ScrollableAnchor>
 
+                <ScrollableAnchor id='section2'>
                 <div className="page-works container">
                     <div className="content-container">
                         <div className="row">{works}</div>
                     </div>
                 </div>
+                </ScrollableAnchor>
 
-                <div className="page-ct">
+                <ScrollableAnchor id='section3'>
+                <div className="page-ct" style={{height:window.innerHeight}}>
                     <div className="p-contact">
                         <div className="title green">Contact</div>
                         <br />
@@ -67,6 +74,7 @@ class Main extends React.Component {
                         <p>A Fremont, CA 94536</p>
                     </div>
                 </div>
+                </ScrollableAnchor>
             </div>
         )
     }
