@@ -27,7 +27,7 @@ class Main extends React.Component {
                     <a className="m-box green" href='#work'><span className="m-text">Work</span>  02</a><br />
                     <a className="m-box green" href='#contact'><span className="m-text">Contact</span>  03</a><br />
                     <br />
-                    <a className="m-box btn-cv" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1-xbo3qFcWQrIx-y7bFXtsXyXx_fsaviv/view?usp=sharing">Resume</a>
+                    <a className="m-box btn-cv" target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1JYu9K5yeOJ9hL8mDf5pU7KSZth-evjZj/view?usp=sharing">Resume</a>
                 </div>
 
                 <ScrollableAnchor id='about'>
